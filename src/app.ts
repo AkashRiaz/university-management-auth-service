@@ -10,8 +10,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // for testing
-app.get('/', (req: Request, res: any) => {
-  res.send('For testing purposes only!')
+app.get('/', (req: Request, res: Response) => {
+  res.send('Just for fun! 🎉')
 })
 
 export default app
